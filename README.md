@@ -1,12 +1,12 @@
-# Smarter Outreach: Predicting Bank Marketing Campaign Success
+# Optimizing Client Outreach: Predicting Term Deposit Subscriptions for Client B
 
-Using data and machine learning to help Client B target the right customers and improve marketing campaign performance.
+Using data and machine learning to identify high-probability customers and improve marketing campaign efficiency for Client B.
 
 ---
 
 ## The Business Problem
 
-Client B runs large-scale digital marketing campaigns to promote term deposits, but most customers do not subscribe. This leads to wasted time and resources, as marketing teams are contacting customers who are unlikely to convert. If the bank continues using a broad, untargeted approach, it will miss opportunities to improve efficiency and increase conversion rates
+Client B runs large-scale digital marketing campaigns to promote term deposits, but most customers do not subscribe. This leads to wasted time and resources, as marketing teams are contacting customers who are unlikely to convert. If Client B continues using a broad, untargeted approach, it will miss opportunities to improve efficiency and increase conversion rates.
 
 ## The Data
 
@@ -28,28 +28,23 @@ The dataset contains 45,211 client records and 17 variables describing customer 
 
 ## Visualizing the Story
 
-<!-- Embed your most compelling chart. Pick the ONE visual that best captures your main finding. -->
+![Call Duration vs Subscription](my_chart.png)
 
-![Description of your chart](your_chart_filename.png)
-
-*[One sentence caption explaining what this chart shows and why it matters.]*
+*Customers who subscribed consistently had much longer call durations, suggesting that stronger engagement during conversations significantly increases the likelihood of conversion.*
 
 ## Prediction Model
 
-[2-3 sentences. How well can we predict the outcome? Translate accuracy into real-world terms.]
-
-<!--
-Tip: Translate model metrics into business impact.
-Instead of "The model achieved 78% accuracy..."
-Try: "Our model correctly flags 8 out of 10 at-risk bookings, giving the hotel front desk team
-enough lead time to proactively reach out and offer flexible rebooking options."
--->
+A Gaussian Naive Bayes model was used to predict whether a customer would subscribe, achieving approximately 86% accuracy. In practice, this means the model is very effective at identifying customers who are unlikely to subscribe, allowing the client to avoid wasting outreach on low-probability targets. However, the model still misses some potential subscribers, highlighting the trade-off between efficiency and capturing all possible conversions.
 
 ## Recommendations
 
-1. **[Action]:** [Why this action, based on your data. Estimated impact.]
-2. **[Action]:** [Why this action, based on your data. Estimated impact.]
-3. **[Action]:** [Why this action, based on your data. Estimated impact.]
+1. **Prioritize customers with successful past campaigns:** Customers with prior successful outcomes convert at about 65%, compared to about 13–17% for others. Targeting this group can significantly increase conversion rates while reducing wasted outreach.
+
+2. **Focus on higher balance customers:** Customers with larger account balances are more likely to subscribe, indicating greater financial capacity. Shifting outreach toward this group can improve campaign efficiency and drive more deposits.
+
+3. **Improve call engagement and quality:** Longer call durations are strongly associated with successful conversions. Investing in better training and more effective call strategies can increase the likelihood of turning conversations into subscriptions.
+
+4. **Optimize campaign timing:** Subscription rates vary by month, with some months outperforming others despite lower call volume. Aligning outreach with higher-performing periods can improve overall campaign effectiveness.
 
 ## Tools & Techniques
 
