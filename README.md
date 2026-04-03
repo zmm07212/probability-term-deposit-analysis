@@ -54,4 +54,3 @@ Python | Pandas | Scikit-Learn | Matplotlib | Seaborn | Gaussian Naive Bayes | G
 
 *This project was completed as part of ISOM 835: Predictive Analytics at Suffolk University\'s
 Sawyer Business School.*
-'''
